@@ -19,6 +19,15 @@ unique_districts = df['district'].unique()
 unique_markets = df['market'].unique()
 unique_commodities = ['Rice (white)', 'Rice (medium grain)', 'Rice (red)', 'Rice (red nadu)'] 
 
+st.markdown(
+    """
+    <h1 style="color: black; font-weight: bold;">
+        📊 Sri Lanka Rice Price Prediction Tool & Dashboard
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
+
 # Streamlit UI
 st.title("📊 Sri Lanka Rice Price Prediction Tool & Dashboard")
 
