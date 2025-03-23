@@ -30,20 +30,25 @@ unique_commodities = ['Rice (white)', 'Rice (medium grain)', 'Rice (red)', 'Rice
 st.markdown(
     """
     <style>
-    * {
+    /* Change text color for the main app */
+    .stApp {
         color: black !important;
     }
-    .stApp {
-        background-image: url('https://img.freepik.com/free-photo/milled-rice-bowl-wooden-spoon-black-cement-floor_1150-20058.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        filter: brightness(100%);
+    
+    /* Change text color for all components except sidebar */
+    .main * {
+        color: black !important;
+    }
+
+    /* Keep the sidebar color default */
+    .css-1d391kg {
+        color: white !important; /* Adjust this if needed */
     }
     </style>
-    """,
+    """, 
     unsafe_allow_html=True
 )
+
 
 # Streamlit UI
 st.title("📊 Sri Lanka Rice Price Prediction Tool & Dashboard")
