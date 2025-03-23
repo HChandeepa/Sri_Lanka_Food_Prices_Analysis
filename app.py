@@ -19,11 +19,28 @@ unique_districts = df['district'].unique()
 unique_markets = df['market'].unique()
 unique_commodities = ['Rice (white)', 'Rice (medium grain)', 'Rice (red)', 'Rice (red nadu)'] 
 
+# st.markdown(
+#     """
+#     <h1 style="color: black; font-weight: bold;">
+#         📊 Sri Lanka Rice Price Prediction Tool & Dashboard
+#     </h1>
+#     """,
+#     unsafe_allow_html=True
+# )
 st.markdown(
     """
-    <h1 style="color: black; font-weight: bold;">
-        📊 Sri Lanka Rice Price Prediction Tool & Dashboard
-    </h1>
+    <style>
+    * {
+        color: black !important;
+    }
+    .stApp {
+        background-image: url('https://img.freepik.com/free-photo/milled-rice-bowl-wooden-spoon-black-cement-floor_1150-20058.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: brightness(100%);
+    }
+    </style>
     """,
     unsafe_allow_html=True
 )
